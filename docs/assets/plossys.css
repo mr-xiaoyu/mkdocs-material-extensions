@@ -1,0 +1,116 @@
+.md-header-nav__topic:first-child {
+  overflow: visible;
+}
+
+.ps-version {
+  display: inline-block;
+  position: absolute;
+  height: 2.4rem;
+}
+
+.ps-version__current {
+  height: 2.4rem;
+  padding: .3rem;
+  margin: 0 .4rem;
+  font-size: .8rem;
+  line-height: 1.9rem;
+}
+
+.ps-version__name {
+  height: 1.8rem;
+  padding: 0 .6rem;
+  float: left;
+  background: rgba(0,0,0,.26);
+  border-radius: .1rem;
+  pointer-events: none;
+}
+
+.ps-version__warning {
+  display: inline-block;
+  position: absolute;
+}
+
+.ps-version__warning > .ps-version-icon {
+  cursor: pointer;
+  color: #FFD54F;
+}
+
+.ps-version__tooltip {
+  display: none;
+  position: relative;
+  width: 10rem;
+  background-color: rgba(0,0,0,.87);
+  font-size: .8em;
+  line-height: 1.4;
+  padding: .5em;
+  white-space: normal;
+}
+
+.ps-version__tooltip:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 1.6em;
+  width: 0;
+  height: 0;
+  margin-left: -.281em;
+  margin-top: -.281em;
+  border: .281em solid transparent;
+  border-bottom-color: rgba(0,0,0,.87);
+  border-top: 0;
+}
+
+.ps-version__warning > .ps-version-icon:hover + .ps-version__tooltip {
+  cursor: pointer;
+  display: block;
+}
+
+.ps-version__list {
+  position: relative;
+  top: -2.4rem;
+  max-height: 1.8rem;
+  padding: 0;
+  margin: .3rem .7rem 0;
+  list-style-type: none;
+  font-size: .8rem;
+  border-radius: .1rem;
+  background: white;
+  color: rgba(0,0,0,.87);
+  box-shadow: 
+    0 6px 10px 0 rgba(0,0,0,.14), 
+    0 1px 18px 0 rgba(0,0,0,.12), 
+    0 3px 5px -1px rgba(0,0,0,.4);
+  overflow: hidden;
+  opacity: 0;
+  transition: 
+    opacity .25s .5s, 
+    max-height 0s .75s;
+}
+
+.ps-version__list:hover {
+  max-height: 10rem;
+  opacity: 1;
+  transition: 
+    opacity .25s, 
+    max-height .25s;
+}
+
+.ps-version__item {
+  height: 1.8rem;
+  padding: 0 .6rem;
+  line-height: 1.9rem;
+  transition: 
+    background .25s, 
+    color .25s;
+  cursor: pointer;
+}
+
+.ps-version__item:hover {
+  background: rgba(0,0,0,.07);
+}
+
+.ps-version-icon {
+  font-size: 1rem;
+  padding-left: .5rem;
+  vertical-align: -.2rem;
+}

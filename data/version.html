@@ -1,0 +1,23 @@
+<div class="ps-version">
+  <div class="ps-version__current">
+    <div class="ps-version__name">
+      {{ selected }}
+      <i class="md-icon ps-version-icon">arrow_drop_down</i>
+    </div>
+    {%- if warning %}
+    <div class="ps-version__warning">
+      <i class="md-icon ps-version-icon">warning</i>
+      <div class="ps-version__tooltip">
+        {{ warning }}
+      </div>
+    </div>
+    {%- endif %}
+  </div>
+  <ul class="ps-version__list">
+    {%- for version in versions %}
+    <li class="ps-version__item">
+      <a href="{{ version.url }}" tabindex="-1">{{ version.name }}</a>
+    </li>
+    {%- endfor %}
+  </ul>
+</div>

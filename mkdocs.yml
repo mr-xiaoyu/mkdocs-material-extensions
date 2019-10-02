@@ -1,0 +1,14 @@
+site_url: https://v5.1.5.6382.plossys-5.docs.sealsystems.de
+site_name: PLOSSYS 5
+
+theme:
+  name: material
+  custom_dir: overrides
+  feature:
+    tabs: true
+
+extra_css:
+  - assets/plossys.css
+
+nav:
+  - Home: index.md

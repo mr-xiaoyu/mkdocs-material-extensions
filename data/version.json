@@ -1,0 +1,17 @@
+{
+  "versions": [
+    {
+      "name": "LATEST",
+      "url": "https://plossys-5.docs.sealsystems.de"
+    },
+    {
+      "name": "5.1.5.6382",
+      "url": "https://v5.1.5.6382.plossys-5.docs.sealsystems.de"
+    },
+    {
+      "name": "5.0.1.4245",
+      "url": "https://v5.0.1.4245.plossys-5.docs.sealsystems.de"
+    }
+  ],
+  "warning": "The selected version is not the latest release. Click here to switch to the latest release"
+}
